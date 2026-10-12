@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --acacia-blue: #1e40af;
+  --acacia-blue-strong: #1d4ed8;
+  --acacia-cyan: #06b6d4;
+  --acacia-cyan-deep: #0891b2;
+  --acacia-dark: #0f172a;
+  --acacia-white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #f8fbff 0%, #eef6ff 100%);
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.section-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.glass-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+@media (max-width: 767px) {
+  .section-shell {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
